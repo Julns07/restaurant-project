@@ -20,6 +20,7 @@ button {
 
 #home {
   position: relative;
+  height: 300px;
 }
 
 #fixedNav ul {
@@ -36,8 +37,13 @@ button {
   padding: 0 7px;
 }
 
+#home .logo {
+  top: 10px;
+}
+
 #about,
-#menu {
+#menu,
+#contact {
   width: 500px;
   margin: auto;
 }
