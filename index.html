@@ -41,7 +41,7 @@
     </div>
     <div id="menu">
       <div id="special">
-        <h3 class="special">Special</h3>
+        <h1 class="special">Special</h1>
         <img class="foodImg" src="http://placehold.it/200" />
         <h3 class="title">Title</h3>
         <span class="price">Price</span>
@@ -50,15 +50,55 @@
           temporibus odit quos quis ipsam quaerat
         </p>
       </div>
-      <h3>Menu</h3>
-      <button>Appitizers</button>
-      <button>Entres</button>
-      <button>Desserts</button>
+      <h1 id="menuTitle">Menu</h1>
+      <div id="menuButtons">
+        <button href="#appitizer" class="menuButton">Appitizers</button>
+        <button href="#entres" class="menuButton">Entres</button>
+        <button href="#desserts" class="menuButton">Desserts</button>
+      </div>
+      <ul id="menuList">
+        <li class="foodItems" id="appitizer">
+          <img class="menuFoodImg" src="http://placehold.it/200" />
+          <h3 class="foodTitle">Gluten free double chocolate sundae</h3>
+          <span class="menuPrice">Price</span>
+          <p class="foodDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            temporibus odit quos quis ipsam quaerat
+          </p>
+        </li>
+        <li class="foodItems" id="entres">
+          <img class="menuFoodImg" src="http://placehold.it/200" />
+          <h3 class="foodTitle">Title</h3>
+          <span class="menuPrice">Price</span>
+          <p class="foodDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            temporibus odit quos quis ipsam quaerat
+          </p>
+        </li>
+        <li class="foodItems" id="desserts">
+          <img class="menuFoodImg" src="http://placehold.it/200" />
+          <h3 class="foodTitle">Title</h3>
+          <span class="menuPrice">Price</span>
+          <p class="foodDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            temporibus odit quos quis ipsam quaerat
+          </p>
+        </li>
+      </ul>
     </div>
     <div id="contact">
-      <h3>Contact Us</h3>
+      <h1>Contact Us</h3>
       <span>Hours<br />12pm - 11pm</span>
-      <span>1112 S Casino Center Blvd, Las Vegas, NV 89104</span>
+      <span>
+        <iframe
+          width="350"
+          height="200"
+          frameborder="0"
+          style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=1112%20S%20Casino%20Center%20Blvd%2C%20Las%20Vegas%2C%20NV%2089104&key=AIzaSyApJ70mFJ8qSlibbxGBkr9FBFc2h6qawcs"
+          allowfullscreen
+        ></iframe>
+      </span>
       <span>Phone: 702 560 5326</span>
     </div>
     <script

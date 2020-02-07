@@ -59,6 +59,7 @@ button {
 
 .special {
   grid-area: special;
+  text-align: center;
 }
 
 .foodImg {
@@ -79,6 +80,69 @@ button {
 .desc {
   grid-area: desc;
   padding-left: 55px;
+}
+
+#menu {
+  position: relative;
+}
+
+#menuList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#menuTitle {
+  text-align: center;
+}
+
+#menuButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foodItems {
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "title price"
+    "desc desc";
+  width: 250px;
+}
+
+.menuFoodImg {
+  grid-area: img;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.foodTitle {
+  grid-area: title;
+  margin: 0;
+  text-align: center;
+}
+
+.menuPrice {
+  grid-area: price;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.foodDesc {
+  grid-area: desc;
+  margin: 0;
+  padding: 5px 0 20px 0;
+  text-align: center;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+#about p {
+  text-align: center;
 }
 
 a {
