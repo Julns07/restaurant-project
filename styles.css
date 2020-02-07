@@ -100,32 +100,30 @@ button {
 #menuButtons {
   display: flex;
   justify-content: space-around;
+  padding: 0 0 30px;
+}
+
+.menuButton {
+  width: 150px;
+  height: 50px;
 }
 
 .foodItems {
   display: grid;
   grid-template-areas:
-    "img img"
     "title price"
     "desc desc";
   width: 250px;
 }
 
-.menuFoodImg {
-  grid-area: img;
-  padding-bottom: 10px;
-  margin: auto;
-}
-
 .foodTitle {
   grid-area: title;
   margin: 0;
-  text-align: center;
+  width: 150px;
 }
 
 .menuPrice {
   grid-area: price;
-  text-align: right;
   display: flex;
   align-items: center;
 }
