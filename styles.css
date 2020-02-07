@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 1300px;
+  margin: auto;
+}
+
+button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  opacity: 0.6;
+}
+
+#home {
+  position: relative;
+}
+
+#fixedNav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+
+#fixedNav li {
+  padding: 0 7px;
+}
+
+#about,
+#menu {
+  width: 500px;
+  margin: auto;
+}
+
+#special {
+  display: grid;
+  grid-template-areas:
+    "special special special"
+    "img tit price"
+    "img desc desc";
+  /* "ico ico ico"; */
+}
+
+.special {
+  grid-area: special;
+}
+
+.foodImg {
+  grid-area: img;
+}
+
+.title {
+  grid-area: tit;
+  margin: 0;
+  text-align: center;
+}
+
+.price {
+  grid-area: price;
+  text-align: center;
+}
+
+.desc {
+  grid-area: desc;
+  padding-left: 55px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
