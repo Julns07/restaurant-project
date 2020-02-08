@@ -45,4 +45,10 @@ $(document).ready(function() {
       .join("")
     $("#desserts").html(dessert)
   })
+  $("#menuButtons").on("click", "button", function(e) {
+    $(".hidden").removeClass("show")
+    $(this)
+      .find("+ .hidden")
+      .addClass("show")
+  })
 })
