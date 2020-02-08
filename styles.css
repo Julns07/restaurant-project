@@ -20,6 +20,19 @@ button {
   outline: none;
 }
 
+#socialTop {
+  display: flex;
+  width: 65px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+#socialTop .socialIcon {
+  width: 20px;
+  height: 20px;
+}
+
 #home {
   position: relative;
   height: 300px;
@@ -40,7 +53,9 @@ button {
 }
 
 #home .logo {
-  top: 10px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
 #about,
@@ -56,7 +71,6 @@ button {
     "special special special"
     "img tit price"
     "img desc desc";
-  /* "ico ico ico"; */
 }
 
 .special {
