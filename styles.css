@@ -162,6 +162,11 @@ button {
   text-align: center;
 }
 
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
 #about h1 {
   text-align: center;
 }
@@ -201,8 +206,9 @@ button {
 
 a {
   text-decoration: none;
+  color: rgb(37, 88, 46);
 }
 
 a:visited {
-  color: black;
+  color: rgb(37, 88, 46);
 }
