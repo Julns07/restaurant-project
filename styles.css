@@ -67,7 +67,8 @@ button {
 #about,
 #menu,
 #contact,
-#reservation {
+#reservation,
+#blog {
   width: 700px;
   margin: auto;
 }
@@ -78,6 +79,67 @@ button {
 
 #about p {
   text-align: center;
+}
+
+#blog h1 {
+  text-align: center;
+}
+
+.blogStructure {
+  border: 1px solid rgb(191, 140, 30);
+  width: 300px;
+  height: 150px;
+}
+
+.blogHeight {
+  height: 250px;
+}
+
+.rMore:hover {
+  cursor: pointer;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-areas:
+    "story"
+    "read";
+}
+
+.storyP {
+  grid-area: story;
+  margin: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.showMore {
+  white-space: normal;
+  overflow: visible;
+}
+
+.hideRead {
+  opacity: 0;
+}
+
+.rMore {
+  grid-area: read;
+  justify-content: center;
+  display: flex;
+}
+
+#stories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.storyTitle {
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+  border-bottom: 1px solid rgb(191, 140, 30);
 }
 
 #special {
