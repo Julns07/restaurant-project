@@ -110,4 +110,35 @@ $(document).ready(function() {
       .parents(".blogStructure")
       .addClass("blogHeight")
   })
+
+  let imgIndex = [
+    { img_url: "5-piece-dining-set-outside-store-front-1237073.jpg" },
+    { img_url: "beer-cheese-food-ham-56007.jpg" },
+    { img_url: "restaurant-690975_1920.jpg" }
+  ]
+
+  imgIndex.forEach((item, i) => {
+    var image = `<div id='image${i}' class='image'></div>`
+    $("#carosuel").append(image)
+    $(`#image${i}`).css("background-image", `url(${item.img_url})`)
+  })
+
+  let currentIndex = 0
+
+  function change() {
+    if (currentIndex === imgIndex.length - 1) {
+      currentIndex = 0
+    } else {
+      currentIndex += 1
+    }
+    $(".image").css("z-index", -1)
+    $(`#image${currentIndex}`).css("z-index", 0)
+  }
+
+  setInterval(function() {
+    change()
+  }, 7000)
+
+  $(".image").css("z-index", -1)
+  $(`#image${currentIndex}`).css("z-index", 0)
 })
