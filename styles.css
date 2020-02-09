@@ -32,6 +32,7 @@ button {
 #socialTop .socialIcon {
   width: 20px;
   height: 20px;
+  background: rgb(191, 140, 30);
 }
 
 #home {
@@ -59,18 +60,6 @@ button {
   background-size: cover;
   background-position: center center;
 }
-
-/* #img1 {
-  background-image: url(5-piece-dining-set-outside-store-front-1237073.jpg);
-}
-
-#img2 {
-  background-image: url(beer-cheese-food-ham-56007.jpg);
-}
-
-#img3 {
-  background-image: url(restaurant-690975_1920.jpg);
-} */
 
 #fixedNav ul {
   list-style: none;
@@ -102,6 +91,28 @@ button {
   height: 25px;
 }
 
+.arrowDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#arrow {
+  position: absolute;
+  bottom: 75px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  color: rgb(37, 88, 46);
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+#arrow:hover {
+  background: rgb(226, 96, 87);
+  color: rgb(191, 140, 30);
+}
+
 #about,
 #menu,
 #contact,
@@ -111,12 +122,20 @@ button {
   margin: auto;
 }
 
+#about {
+  height: 90vh;
+}
+
 #about h1 {
   text-align: center;
 }
 
 #about p {
   text-align: center;
+}
+
+#blog {
+  height: 50vh;
 }
 
 #blog h1 {
