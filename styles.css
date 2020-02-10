@@ -124,6 +124,7 @@ button {
 
 #about {
   height: 90vh;
+  padding: 10px;
 }
 
 #about h1 {
@@ -138,8 +139,15 @@ button {
   height: 50vh;
 }
 
+.historyPic {
+  height: 250px;
+  display: flex;
+  margin: auto;
+}
+
 #blog h1 {
   text-align: center;
+  margin: 50px;
 }
 
 .blogStructure {
@@ -199,12 +207,26 @@ button {
   border-bottom: 1px solid rgb(191, 140, 30);
 }
 
+#collage {
+  width: 900px;
+  margin: 200px auto;
+}
+
+#collage .collage {
+  height: 250px;
+}
+
 #special {
   display: grid;
   grid-template-areas:
     "special special special"
     "img tit price"
     "img desc desc";
+}
+
+#specialImg {
+  height: 200px;
+  width: 200px;
 }
 
 .special {
